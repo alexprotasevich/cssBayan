@@ -1,3 +1,7 @@
+.wrapper {
+    background: #f0e6ae;
+}
+
 .accordion {
     width: 500px;
     position: relative;
@@ -10,12 +14,12 @@
 .accordion-body {
     height:  0;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 .input-label:checked + .title + .accordion-body,
 .input-label:hover + .title + .accordion-body {
-    height: auto;
+    height: 400px;
     padding:  10px 0;
 }
 
@@ -23,8 +27,7 @@
     display: inline-block;
     position: absolute;
     right: 0;
-    content: '+';
-    border: 1px solid red;
+    content: '✚';
 }
 
 .accordion:hover > .input-label:checked + .title::after,
@@ -32,6 +35,6 @@
     display: inline-block;
     position: absolute;
     right: 0;
-    content: 'x';
-    border: 1px solid blue;
+    content: '✖';
+    font-weight: bold;
 }
