@@ -9,7 +9,7 @@ html{
 
 .wrapper {
     background: #f0e6ae;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .bayan-title {
